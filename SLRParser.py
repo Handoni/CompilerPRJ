@@ -1,3 +1,5 @@
+import sys
+
 # Define grammar rules
 GRAMMAR = [
     ("S", ["CODE"]),
@@ -491,7 +493,8 @@ def parse(file):
                 )
 
 
-f = open("./input.txt", "r")
+fileName = sys.argv[1]
+f = open("./" + fileName + ".txt", "r")
 # tokens = "vtype id lparen vtype id comma vtype id rparen lbrace if lparen boolstr comp boolstr rparen lbrace rbrace return boolstr semi rbrace"
 
 
