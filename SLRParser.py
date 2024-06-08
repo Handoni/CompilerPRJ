@@ -494,8 +494,6 @@ def parse(file):
 
 
 fileName = sys.argv[1]
-f = open("./" + fileName + ".txt", "r")
-# tokens = "vtype id lparen vtype id comma vtype id rparen lbrace if lparen boolstr comp boolstr rparen lbrace rbrace return boolstr semi rbrace"
-
+f = open("./" + fileName, "r")
 
 print(parse(f))
